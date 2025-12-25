@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Prediction</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Pass Prediction</h1>
+        <form id="predictionForm">
+            <label for="subject">Choose Subject:</label>
+            <select name="subject" id="subject" required>
+                <option value="">Select Subject</option>
+                <option value="maths">Maths</option>
+                <option value="science">Science</option>
+                <option value="english">English</option>
+            </select>
+
+            <label for="study_hours">Study Hours:</label>
+            <input type="number" name="study_hours" id="study_hours" step="0.1" min="0" required>
+
+            <label for="days_before_exam">Days Before Exam:</label>
+            <input type="number" name="days_before_exam" id="days_before_exam" min="0" required>
+
+            <label for="attendance_percentage">Attendance Percentage:</label>
+            <input type="number" name="attendance_percentage" id="attendance_percentage" step="0.1" min="0" max="100" required>
+
+            <button type="submit">Predict</button>
+        </form>
+        <div class="loading" id="loading">Processing...</div>
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- Include libraries -->
+    <script src="script.js"></script>
+</body>
+</html>
