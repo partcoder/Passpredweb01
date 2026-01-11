@@ -45,10 +45,10 @@ def predict():
         <form action="/predict" method="post">
             <label for="subject">Choose Subject:</label>
             <select name="subject" required>
-                <option value="">Select Subject</option>
-                <option value="maths">Maths</option>
-                <option value="science">Science</option>
-                <option value="english">English</option>
+                <option value="Select Subject" style="color: white;">Select Subject</option>
+                <option value="maths" style="color: black;">Maths</option>
+                <option value="science" style="color: black;">Science</option>
+                <option value="english" style="color: black;">English</option>
             </select>
             <label for="study_hours">Study Hours:</label>
             <input type="number" name="study_hours" step="0.1" min="0" required>
@@ -99,9 +99,9 @@ def predict():
             <label for="subject">Choose Subject:</label>
             <select name="subject" required>
                 <option value="">Select Subject</option>
-                <option value="maths" {"selected" if subject == "maths" else ""}>Maths</option>
-                <option value="science" {"selected" if subject == "science" else ""}>Science</option>
-                <option value="english" {"selected" if subject == "english" else ""}>English</option>
+                <option value="maths" {"selected" if subject == "maths" else ""} style="color: black;">Maths</option>
+                <option value="science" {"selected" if subject == "science" else ""} style="color: black;">Science</option>
+                <option value="english" {"selected" if subject == "english" else ""} style="color: black;">English</option>
             </select>
             <label for="study_hours">Study Hours:</label>
             <input type="number" name="study_hours" step="0.1" min="0" value="{study_hours}" required>
