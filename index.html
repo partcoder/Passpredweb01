@@ -9,13 +9,13 @@
 <body>
     <div class="container">
         <h1>Student Pass Prediction</h1>
-        <form id="predictionForm">
+        <form id="predictionForm" action="/predict" method="post">
             <label for="subject">Choose Subject:</label>
-            <select name="subject" id="subject" required>
-                <option value="">Select Subject</option>
-                <option value="maths">Maths</option>
-                <option value="science">Science</option>
-                <option value="english">English</option>
+            <select name="subject" id="subject">
+                <option value="Select Subject" style="color: white;">Select Subject</option>
+                <option value="maths" style="color: black;">Maths</option>
+                <option value="science" style="color: black;">Science</option>
+                <option value="english" style="color: black;">English</option>
             </select>
 
             <label for="study_hours">Study Hours:</label>
@@ -33,7 +33,5 @@
         <div class="result" id="result"></div>
     </div>
 
-    <!-- Include libraries -->
-    <script src="script.js"></script>
 </body>
 </html>
