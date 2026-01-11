@@ -10,10 +10,6 @@
     {
       "src": "/predict",
       "dest": "/api/predict.py"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
     }
   ]
 }
