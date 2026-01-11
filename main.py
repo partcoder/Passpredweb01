@@ -50,7 +50,7 @@ def predict():
                 <option value="science" style="color: black;">Science</option>
                 <option value="english" style="color: black;">English</option>
             </select>
-            <label for="study_hours">Study Hours:</label>
+            <label for="study_hours">Study Hours/Day:</label>
             <input type="number" name="study_hours" step="0.1" min="0" required>
             <label for="days_before_exam">Days Before Exam:</label>
             <input type="number" name="days_before_exam" min="0" required>
@@ -103,7 +103,7 @@ def predict():
                 <option value="science" {"selected" if subject == "science" else ""} style="color: black;">Science</option>
                 <option value="english" {"selected" if subject == "english" else ""} style="color: black;">English</option>
             </select>
-            <label for="study_hours">Study Hours:</label>
+            <label for="study_hours">Study Hours/Day:</label>
             <input type="number" name="study_hours" step="0.1" min="0" value="{study_hours}" required>
             <label for="days_before_exam">Days Before Exam:</label>
             <input type="number" name="days_before_exam" min="0" value="{days_before}" required>
